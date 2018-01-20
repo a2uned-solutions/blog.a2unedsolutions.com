@@ -20,3 +20,8 @@ wp-content/plugins/hello.php
 .idea/
 .idea/*
 */.idea
+
+.sass-cache
+*/.sass-cache
+.sass-cache/*
+wp-content/themes/a2uned/assets/.sass-cache

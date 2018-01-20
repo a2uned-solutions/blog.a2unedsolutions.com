@@ -8,4 +8,11 @@
 - Go through WordPress installation process
 - Activate A2uned WordPress Theme
 
-- Testing commit push and pull
+Assuming Compass is installed locally for Sass compiling.
+
+```sh
+cd TO_YOUR_PROJECT_DIRECTORY/wp-content/themes/a2uned/assets
+compass watch
+```
+
+Sass files should compile to CSS when .scss files are modified.

@@ -1,15 +1,6 @@
 <?php
 
-    add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
-
-    function enqueue_parent_styles() {
-        wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
-    }
-
-    add_action( 'wp_enqueue_scripts', 'enqueue_my_styles' );
-    function enqueue_my_styles() {
-        wp_enqueue_style( 'a2uned', get_stylesheet_directory_uri() . "/stylesheets/screen.css");
-    }
-
-?>
-
+function custom_styles() {
+    wp_enqueue_style( 'screen', '/wp-content/themes/a2uned/assets/stylesheets/screen.css',false,'1.1','all');
+}
+add_action( 'wp_enqueue_scripts', 'custom_styles' );
