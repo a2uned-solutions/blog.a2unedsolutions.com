@@ -6,5 +6,10 @@
         wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
     }
 
+    add_action( 'wp_enqueue_scripts', 'enqueue_my_styles' );
+    function enqueue_my_styles() {
+        wp_enqueue_style( 'a2uned', get_stylesheet_directory_uri() . "/stylesheets/screen.css");
+    }
+
 ?>
 
