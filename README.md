@@ -7,3 +7,5 @@
 - Install MAMP / LAMP / WAMP to setup project locally
 - Go through WordPress installation process
 - Activate A2uned WordPress Theme
+
+- Testing commit push and pull
