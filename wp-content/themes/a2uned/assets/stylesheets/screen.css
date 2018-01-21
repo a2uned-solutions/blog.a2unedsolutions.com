@@ -2,8 +2,20 @@
  * In this file you should write your imports)
  */
 /* line 1, ../sass/_global.scss */
-body {
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 6, ../sass/_global.scss */
+html body {
   font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
   color: #3f4041;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+/* line 15, ../sass/_global.scss */
+html a {
+  color: #527435;
 }

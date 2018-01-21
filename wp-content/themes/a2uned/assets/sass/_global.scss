@@ -1,5 +1,18 @@
-body {
-  font-family: $fPrimary;
-  color: $cPrimary;
-  line-height: 1.4;
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  body {
+    font-family: $fPrimary;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $cPrimary;
+    line-height: 1.5;
+
+  }
+
+  a {
+     color: $cAction;
+  }
 }
