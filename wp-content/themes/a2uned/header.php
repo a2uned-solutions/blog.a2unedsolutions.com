@@ -28,8 +28,9 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
+        <a href="/" title="A2uned Solutions Blog" class="logo">
+            <img src="/wp-content/themes/a2uned/assets/images/a2uned_solutions_logo.svg" alt="A2uned Solutions Blog" />
+        </a>
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">

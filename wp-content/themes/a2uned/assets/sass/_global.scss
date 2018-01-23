@@ -9,10 +9,58 @@ html {
     font-weight: 300;
     color: $cPrimary;
     line-height: 1.5;
+    background: $cSecondary;
+  }
 
+  h1 {
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  h3 {
+    font-size: 1.6vw;
   }
 
   a {
      color: $cAction;
+  }
+
+  header {
+    height: $lHeaderHeight;
+
+    .logo {
+
+      img {
+        max-width: 200px;
+        display: block;
+      }
+    }
+
+    .navigation-top {
+      top: $lHeaderHeight;
+      position: relative;
+
+      &.site-navigation-fixed {
+        top: $lHeaderHeight;
+        position: relative;
+      }
+    }
+  }
+
+  footer.site-footer {
+    background: url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
+    background-size: 20%;
+    border: none;
+    text-align: center;
+    padding: 20px;
+
+    .logo-icon {
+      width: 16px;
+      margin: 0 5px -5px 0;
+      display: inline-block;
+    }
   }
 }

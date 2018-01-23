@@ -14,8 +14,54 @@ html body {
   font-weight: 300;
   color: #3f4041;
   line-height: 1.5;
+  background: #f5f6f7;
 }
 /* line 15, ../sass/_global.scss */
+html h1 {
+  font-size: 2vw;
+}
+/* line 19, ../sass/_global.scss */
+html h2 {
+  font-size: 1.8vw;
+}
+/* line 23, ../sass/_global.scss */
+html h3 {
+  font-size: 1.6vw;
+}
+/* line 27, ../sass/_global.scss */
 html a {
   color: #527435;
+}
+/* line 31, ../sass/_global.scss */
+html header {
+  height: 80px;
+}
+/* line 36, ../sass/_global.scss */
+html header .logo img {
+  max-width: 200px;
+  display: block;
+}
+/* line 42, ../sass/_global.scss */
+html header .navigation-top {
+  top: 80px;
+  position: relative;
+}
+/* line 46, ../sass/_global.scss */
+html header .navigation-top.site-navigation-fixed {
+  top: 80px;
+  position: relative;
+}
+/* line 53, ../sass/_global.scss */
+html footer.site-footer {
+  background: url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
+  background-size: 20%;
+  border: none;
+  text-align: center;
+  padding: 20px;
+}
+/* line 60, ../sass/_global.scss */
+html footer.site-footer .logo-icon {
+  width: 16px;
+  margin: 0 5px -5px 0;
+  display: inline-block;
 }
