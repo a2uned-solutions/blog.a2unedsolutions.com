@@ -28,9 +28,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-        <a href="/" title="A2uned Solutions Blog" class="logo">
+        <a href="/" title="A2uned Solutions Blog" class="blog-title logo">
+            <span class="title">Blog</span>
             <img src="/wp-content/themes/a2uned/assets/images/a2uned_solutions_logo.svg" alt="A2uned Solutions Blog" />
         </a>
+        <a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">

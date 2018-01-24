@@ -23,35 +23,117 @@ html h1 {
 /* line 19, ../sass/_global.scss */
 html h2 {
   font-size: 1.8vw;
+  margin: 0;
+  padding: 0 0 15px 0;
 }
-/* line 23, ../sass/_global.scss */
-html h3 {
+/* line 25, ../sass/_global.scss */
+html h3,
+html h4 {
   font-size: 1.6vw;
+  margin: 0;
+  padding: 0 0 15px 0;
 }
-/* line 27, ../sass/_global.scss */
+/* line 32, ../sass/_global.scss */
+html blockquote {
+  font-size: 1.6rem;
+}
+/* line 36, ../sass/_global.scss */
 html a {
   color: #527435;
 }
-/* line 31, ../sass/_global.scss */
-html header {
-  height: 80px;
+/* line 40, ../sass/_global.scss */
+html input,
+html button,
+html select,
+html textarea {
+  font-size: 1.4rem;
 }
-/* line 36, ../sass/_global.scss */
+/* line 49, ../sass/_global.scss */
+html header.site-header {
+  height: 80px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+/* line 55, ../sass/_global.scss */
+html header .logo {
+  position: relative;
+  display: block;
+  max-width: 240px;
+  margin: 15px 0 20px 0;
+}
+/* line 61, ../sass/_global.scss */
+html header .logo .title {
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+}
+/* line 72, ../sass/_global.scss */
 html header .logo img {
   max-width: 200px;
+  margin: 0 0 0 33px;
   display: block;
 }
-/* line 42, ../sass/_global.scss */
+/* line 79, ../sass/_global.scss */
 html header .navigation-top {
+  background: none;
+  border: none;
   top: 80px;
-  position: relative;
+  position: absolute;
+  top: 7px;
+  left: 300px;
+  width: auto;
 }
-/* line 46, ../sass/_global.scss */
+/* line 88, ../sass/_global.scss */
 html header .navigation-top.site-navigation-fixed {
   top: 80px;
-  position: relative;
+  position: absolute;
+  top: 7px;
+  left: 300px;
+  width: auto;
 }
-/* line 53, ../sass/_global.scss */
+/* line 96, ../sass/_global.scss */
+html header .navigation-top .wrap {
+  margin: 0;
+  padding: 0;
+}
+/* line 101, ../sass/_global.scss */
+html header .navigation-top .main-navigation {
+  margin: 0;
+  width: auto;
+}
+/* line 107, ../sass/_global.scss */
+html header .navigation-top .main-navigation li:first-child {
+  border-left: 1px solid #fff;
+}
+/* line 110, ../sass/_global.scss */
+html header .navigation-top .main-navigation li:first-child a {
+  border-left: 1px solid #f5f6f7;
+}
+/* line 115, ../sass/_global.scss */
+html header .navigation-top .main-navigation li a {
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 121, ../sass/_global.scss */
+html header .navigation-top .main-navigation li a:focus, html header .navigation-top .main-navigation li a:hover {
+  color: #527435;
+}
+/* line 130, ../sass/_global.scss */
+html header .menu-scroll-down {
+  display: none;
+}
+/* line 133, ../sass/_global.scss */
+html header .menu-scroll-down .icon {
+  display: none;
+}
+/* line 139, ../sass/_global.scss */
 html footer.site-footer {
   background: url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
   background-size: 20%;
@@ -59,9 +141,162 @@ html footer.site-footer {
   text-align: center;
   padding: 20px;
 }
-/* line 60, ../sass/_global.scss */
+/* line 146, ../sass/_global.scss */
 html footer.site-footer .logo-icon {
   width: 16px;
   margin: 0 5px -5px 0;
   display: inline-block;
+}
+/* line 153, ../sass/_global.scss */
+html .site-content {
+  padding: 40px 0;
+}
+/* line 157, ../sass/_global.scss */
+html .page-header {
+  height: inherit;
+  padding-bottom: 15px;
+}
+/* line 162, ../sass/_global.scss */
+html .page-title {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #f5f6f7;
+}
+/* line 169, ../sass/_global.scss */
+html #secondary {
+  font-size: 1.4rem;
+}
+
+/* line 175, ../sass/_global.scss */
+.entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover {
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* line 182, ../sass/_global.scss */
+body.admin-bar .site-navigation-fixed.navigation-top {
+  top: 7px;
+}
+
+/* line 3, ../sass/_entry.scss */
+article .entry-meta {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #d2d2d2;
+}
+/* line 9, ../sass/_entry.scss */
+article .entry-header .entry-title {
+  font-size: 2.6rem !important;
+  margin: 0;
+}
+/* line 13, ../sass/_entry.scss */
+article .entry-header .entry-title a {
+  color: #527435;
+}
+/* line 20, ../sass/_entry.scss */
+article .entry-content h2 {
+  font-size: 2.2rem;
+}
+/* line 24, ../sass/_entry.scss */
+article .entry-content h3 {
+  font-size: 2rem;
+}
+/* line 28, ../sass/_entry.scss */
+article .entry-content h4 {
+  font-size: 1.8rem;
+}
+/* line 32, ../sass/_entry.scss */
+article .entry-content a {
+  box-shadow: none;
+}
+/* line 36, ../sass/_entry.scss */
+article .entry-content a.more-link {
+  background: #527435;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  display: inline-block;
+}
+/* line 45, ../sass/_entry.scss */
+article .entry-content a.more-link:before {
+  margin-top: 0;
+}
+/* line 49, ../sass/_entry.scss */
+article .entry-content a.more-link:hover {
+  border: none;
+  color: #ffffff;
+}
+
+/* line 3, ../sass/_widgets.scss */
+.widget h2.widget-title {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+/* line 12, ../sass/_widgets.scss */
+.widget ul li {
+  border-top: 1px solid #f5f6f7;
+  border-bottom: 1px solid #f5f6f7;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 7, ../sass/_mediaQueries.scss */
+  html header .navigation-top {
+    background: none;
+    border: none;
+    top: 80px;
+    position: absolute;
+    top: 7px;
+    left: inherit;
+    right: 15px;
+    width: auto;
+  }
+  /* line 17, ../sass/_mediaQueries.scss */
+  html header .navigation-top.site-navigation-fixed {
+    top: 80px;
+    position: absolute;
+    top: 7px;
+    left: inherit;
+    right: 15px;
+    width: 80%;
+  }
+  /* line 31, ../sass/_mediaQueries.scss */
+  html header .main-navigation > div > ul {
+    padding: 0;
+    position: relative;
+    top: 73px;
+    right: -15px;
+  }
+  /* line 37, ../sass/_mediaQueries.scss */
+  html header .main-navigation > div > ul li:first-child {
+    border-left: none;
+  }
+  /* line 44, ../sass/_mediaQueries.scss */
+  html header .menu-toggle {
+    font-size: 0;
+    width: 31px;
+    text-align: right;
+    float: right;
+    margin: 19px 0 0 0;
+  }
+  /* line 51, ../sass/_mediaQueries.scss */
+  html header .menu-toggle:focus {
+    outline: none;
+  }
+  /* line 55, ../sass/_mediaQueries.scss */
+  html header .menu-toggle .icon {
+    height: 30px;
+    font-size: 30px;
+    color: #527435;
+  }
+
+  /* line 64, ../sass/_mediaQueries.scss */
+  footer.site-footer {
+    font-size: 1.2rem;
+    background-size: 40%;
+  }
 }
