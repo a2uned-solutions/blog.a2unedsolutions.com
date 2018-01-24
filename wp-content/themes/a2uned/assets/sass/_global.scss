@@ -161,9 +161,32 @@ html {
 
   .page-title {
     font-size: 2.4rem;
-    letter-spacing: 1px;
+    letter-spacing: normal;
+    text-transform: none;
     padding: 0 0 15px;
     border-bottom: 1px solid $cSecondary;
+  }
+
+  .post-list-header {
+    background: $cAction;
+    background: rgba($cAction, 0.3) url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
+    background-size: 20%;
+    margin: -40px 0 40px;
+    padding: 0;
+
+    .page-title {
+      color: $cPrimary;
+      border: none;
+      text-align: center;
+      margin: 0;
+      padding: 34px;
+      line-height: 1;
+
+      span {
+        font-weight: 300;
+        color: rgba($cPrimary, 0.8);
+      }
+    }
   }
 
   #secondary {
