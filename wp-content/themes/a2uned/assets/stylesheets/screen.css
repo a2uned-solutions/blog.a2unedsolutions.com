@@ -42,11 +42,11 @@ html h5 {
 }
 /* line 39, ../sass/_global.scss */
 html p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 /* line 43, ../sass/_global.scss */
 html blockquote {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 /* line 47, ../sass/_global.scss */
 html a {
@@ -369,19 +369,50 @@ body.page:not(.twentyseventeen-front-page) .entry-footer .tags-links a {
   color: #527435;
 }
 
-/* line 3, ../sass/_comments.scss */
+/* line 97, ../sass/_entry.scss */
+body.single .author-bio-section {
+  background: #f5f6f7;
+  padding: 15px;
+}
+/* line 102, ../sass/_entry.scss */
+body.single .author-name {
+  font-size: 1.5rem;
+}
+/* line 106, ../sass/_entry.scss */
+body.single .author-details {
+  font-size: 1.4rem;
+}
+/* line 109, ../sass/_entry.scss */
+body.single .author-details img {
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+  float: left;
+  margin: 0 15px 10px 0;
+}
+/* line 117, ../sass/_entry.scss */
+body.single .author-links {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* line 1, ../sass/_comments.scss */
+#comments {
+  padding-top: 40px;
+}
+
+/* line 7, ../sass/_comments.scss */
 .comments-area .comments-title {
   font-size: 1.8rem;
 }
-/* line 7, ../sass/_comments.scss */
+/* line 11, ../sass/_comments.scss */
 .comments-area .comment-body {
   font-size: 1.4rem;
 }
-/* line 11, ../sass/_comments.scss */
+/* line 15, ../sass/_comments.scss */
 .comments-area .comment-author {
   font-size: 1.4rem;
 }
-/* line 15, ../sass/_comments.scss */
+/* line 19, ../sass/_comments.scss */
 .comments-area .comment-metadata {
   font-size: 1.2rem;
   font-weight: 300;

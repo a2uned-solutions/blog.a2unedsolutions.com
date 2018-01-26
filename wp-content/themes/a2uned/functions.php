@@ -24,4 +24,51 @@ function custom_add_google_fonts() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 
+// Add our function to the post content filter
+add_action( 'the_content', 'wpb_author_info_box' );
+
+// Allow HTML in author bio section
+remove_filter('pre_user_description', 'wp_filter_kses');
+
+// Add author bio to post page
+function wpb_author_info_box( $content ) {
+
+    global $post;
+
+    if ( is_single() && isset( $post->post_author ) ) {
+
+        $display_name = get_the_author_meta( 'display_name', $post->post_author );
+
+        if ( empty( $display_name ) )
+            $display_name = get_the_author_meta( 'nickname', $post->post_author );
+
+        $user_description = get_the_author_meta( 'user_description', $post->post_author );
+
+        $user_website = get_the_author_meta('url', $post->post_author);
+
+        $user_posts = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_author));
+
+        if ( ! empty( $display_name ) )
+
+            $author_details = '<h4 class="author-name">About ' . $display_name . '</h4>';
+
+        if ( ! empty( $user_description ) )
+
+            $author_details .= '<p class="author-details">' . get_avatar( get_the_author_meta('user_email') , 90 ) . nl2br( $user_description ). '</p>';
+
+        $author_details .= '<p class="author-links"><a href="'. $user_posts .'">View all articles by ' . $display_name . '</a>';
+
+        if ( ! empty( $user_website ) ) {
+
+            $author_details .= ' / <a href="' . $user_website .'" target="_blank" rel="nofollow">Website</a></p>';
+
+        } else {
+            $author_details .= '</p>';
+        }
+
+        $content = $content . '<footer class="author-bio-section" >' . $author_details . '</footer>';
+    }
+    return $content;
+}
+
 ?>

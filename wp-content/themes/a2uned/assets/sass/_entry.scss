@@ -91,3 +91,31 @@ body.page:not(.twentyseventeen-front-page) {
     }
   }
 }
+
+body.single {
+
+  .author-bio-section{
+    background: $cSecondary;
+    padding: 15px;
+  }
+
+  .author-name{
+    font-size: 1.5rem;
+  }
+
+  .author-details {
+    font-size: 1.4rem;
+
+    img {
+      border: 1px solid $cSecondaryText;
+      border-radius: 50%;
+      float: left;
+      margin: 0 15px 10px 0;
+    }
+  }
+
+  .author-links {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+}
