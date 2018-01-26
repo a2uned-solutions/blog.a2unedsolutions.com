@@ -18,8 +18,10 @@ html {
 
   h2 {
     font-size: 1.8vw;
+    font-weight: 900;
     margin: 0;
     padding: 0 0 15px 0;
+    color: $cPrimary;
   }
 
   h3,
@@ -29,12 +31,31 @@ html {
     padding: 0 0 15px 0;
   }
 
+  h5 {
+    font-weight: 300;
+    font-size: 1.6vw;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
   blockquote {
     font-size: 1.6rem;
   }
 
   a {
      color: $cAction;
+
+    &:hover,
+    &:focus {
+      color: $cAction2;
+    }
+  }
+
+  pre {
+    font-size: 1.3rem;
+    line-height: 1.4;
   }
 
   input,
@@ -42,6 +63,26 @@ html {
   select,
   textarea {
     font-size: 1.4rem;
+  }
+
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    background-color: $cAction;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+    &:hover,
+    &:focus {
+      background-color: $cAction2;
+    }
+  }
+
+  .no-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   header {
@@ -169,28 +210,41 @@ html {
 
   .post-list-header {
     background: $cAction;
-    background: rgba($cAction, 0.3) url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
-    background-size: 20%;
+    background: rgba($cAction, 0.3) url("/wp-content/themes/a2uned/assets/images/hero.jpg") center no-repeat;
+    background-size: cover;
     margin: -40px 0 40px;
     padding: 0;
 
     .page-title {
-      color: $cPrimary;
+      color: $cW;
       border: none;
       text-align: center;
       margin: 0;
-      padding: 34px;
+      padding: 45px 20px;
       line-height: 1;
+      font-size: 3.4rem;
+      opacity: 0.8;
 
       span {
         font-weight: 300;
-        color: rgba($cPrimary, 0.8);
+        color: rgba($cSecondaryText, 0.8);
       }
     }
   }
 
   #secondary {
     font-size: 1.4rem;
+  }
+
+  .nav-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .nav-title {
+    font-size: 1.4rem;
+    color: $cAction;
   }
 }
 
