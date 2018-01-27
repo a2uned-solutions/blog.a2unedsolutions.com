@@ -613,4 +613,9 @@ body.single .author-links {
     font-size: 1.2rem;
     background-size: 40%;
   }
+
+  /* line 69, ../sass/_mediaQueries.scss */
+  #payments-donations .crypto-addresses li .input-action button {
+    padding: 13px 16px;
+  }
 }
