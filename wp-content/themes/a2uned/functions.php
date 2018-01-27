@@ -6,9 +6,10 @@ function enqueue_parent_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
-// Add custom styles
+// Add custom styles and scripts
 function custom_styles() {
     wp_enqueue_style( 'screen', '/wp-content/themes/a2uned/assets/stylesheets/screen.css',false,'1.1','all');
+    wp_enqueue_script( 'a2uned', '/wp-content/themes/a2uned/assets/js/a2uned.js', array( 'jquery' ));
 }
 add_action( 'wp_enqueue_scripts', 'custom_styles' );
 
@@ -56,15 +57,7 @@ function wpb_author_info_box( $content ) {
 
             $author_details .= '<p class="author-details">' . get_avatar( get_the_author_meta('user_email') , 90 ) . nl2br( $user_description ). '</p>';
 
-        $author_details .= '<p class="author-links"><a href="'. $user_posts .'">View all articles by ' . $display_name . '</a>';
-
-        if ( ! empty( $user_website ) ) {
-
-            $author_details .= ' / <a href="' . $user_website .'" target="_blank" rel="nofollow">Website</a></p>';
-
-        } else {
-            $author_details .= '</p>';
-        }
+        $author_details .= '<p class="author-links"><a href="'. $user_posts .'">View all articles by ' . $display_name . '</a></p>';
 
         $content = $content . '<footer class="author-bio-section" >' . $author_details . '</footer>';
     }
