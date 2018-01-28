@@ -18,11 +18,11 @@ html body {
 }
 /* line 15, ../sass/_global.scss */
 html h1 {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 /* line 19, ../sass/_global.scss */
 html h2 {
-  font-size: 1.8vw;
+  font-size: 1.8rem;
   font-weight: 900;
   margin: 0;
   padding: 0 0 15px 0;
@@ -31,14 +31,14 @@ html h2 {
 /* line 27, ../sass/_global.scss */
 html h3,
 html h4 {
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   margin: 0;
   padding: 0 0 15px 0;
 }
 /* line 34, ../sass/_global.scss */
 html h5 {
   font-weight: 300;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
 }
 /* line 39, ../sass/_global.scss */
 html p {
@@ -51,24 +51,26 @@ html blockquote {
 /* line 47, ../sass/_global.scss */
 html a {
   color: #527435;
+  outline: none;
 }
-/* line 50, ../sass/_global.scss */
+/* line 51, ../sass/_global.scss */
 html a:hover, html a:focus {
   color: #86be40;
+  outline: none;
 }
-/* line 56, ../sass/_global.scss */
+/* line 58, ../sass/_global.scss */
 html pre {
   font-size: 1.3rem;
   line-height: 1.4;
 }
-/* line 61, ../sass/_global.scss */
+/* line 63, ../sass/_global.scss */
 html input,
 html button,
 html select,
 html textarea {
   font-size: 1.4rem;
 }
-/* line 68, ../sass/_global.scss */
+/* line 70, ../sass/_global.scss */
 html button,
 html input[type="button"],
 html input[type="submit"] {
@@ -76,16 +78,18 @@ html input[type="submit"] {
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 400;
+  outline: none;
 }
-/* line 76, ../sass/_global.scss */
+/* line 79, ../sass/_global.scss */
 html button:hover, html button:focus,
 html input[type="button"]:hover,
 html input[type="button"]:focus,
 html input[type="submit"]:hover,
 html input[type="submit"]:focus {
   background-color: #86be40;
+  outline: none;
 }
-/* line 82, ../sass/_global.scss */
+/* line 86, ../sass/_global.scss */
 html .button {
   background-color: #527435;
   font-size: 1.4rem;
@@ -95,31 +99,37 @@ html .button {
   padding: 8px 12px;
   border-radius: 3px;
 }
-/* line 91, ../sass/_global.scss */
+/* line 95, ../sass/_global.scss */
 html .button:hover, html .button:focus {
   background-color: #86be40;
   color: #ffffff;
 }
-/* line 98, ../sass/_global.scss */
+/* line 102, ../sass/_global.scss */
 html .no-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 106, ../sass/_global.scss */
+/* line 108, ../sass/_global.scss */
+html .wrap {
+  max-width: 1300px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 116, ../sass/_global.scss */
 html header.site-header {
   height: 80px;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-/* line 112, ../sass/_global.scss */
+/* line 122, ../sass/_global.scss */
 html header .logo {
   position: relative;
   display: block;
   max-width: 240px;
   margin: 15px 0 20px 0;
 }
-/* line 118, ../sass/_global.scss */
+/* line 128, ../sass/_global.scss */
 html header .logo .title {
   display: block;
   position: absolute;
@@ -130,13 +140,13 @@ html header .logo .title {
   text-transform: uppercase;
   transform: rotate(270deg);
 }
-/* line 129, ../sass/_global.scss */
+/* line 139, ../sass/_global.scss */
 html header .logo img {
   max-width: 200px;
   margin: 0 0 0 33px;
   display: block;
 }
-/* line 136, ../sass/_global.scss */
+/* line 146, ../sass/_global.scss */
 html header .navigation-top {
   background: none;
   border: none;
@@ -146,7 +156,7 @@ html header .navigation-top {
   left: 300px;
   width: auto;
 }
-/* line 145, ../sass/_global.scss */
+/* line 155, ../sass/_global.scss */
 html header .navigation-top.site-navigation-fixed {
   top: 80px;
   position: absolute;
@@ -154,44 +164,44 @@ html header .navigation-top.site-navigation-fixed {
   left: 300px;
   width: auto;
 }
-/* line 153, ../sass/_global.scss */
+/* line 163, ../sass/_global.scss */
 html header .navigation-top .wrap {
   margin: 0;
   padding: 0;
 }
-/* line 158, ../sass/_global.scss */
+/* line 168, ../sass/_global.scss */
 html header .navigation-top .main-navigation {
   margin: 0;
   width: auto;
 }
-/* line 164, ../sass/_global.scss */
+/* line 174, ../sass/_global.scss */
 html header .navigation-top .main-navigation li:first-child {
   border-left: 1px solid #fff;
 }
-/* line 167, ../sass/_global.scss */
+/* line 177, ../sass/_global.scss */
 html header .navigation-top .main-navigation li:first-child a {
   border-left: 1px solid #f5f6f7;
 }
-/* line 172, ../sass/_global.scss */
+/* line 182, ../sass/_global.scss */
 html header .navigation-top .main-navigation li a {
   padding: 20px;
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 178, ../sass/_global.scss */
+/* line 188, ../sass/_global.scss */
 html header .navigation-top .main-navigation li a:focus, html header .navigation-top .main-navigation li a:hover {
   color: #527435;
 }
-/* line 187, ../sass/_global.scss */
+/* line 197, ../sass/_global.scss */
 html header .menu-scroll-down {
   display: none;
 }
-/* line 190, ../sass/_global.scss */
+/* line 200, ../sass/_global.scss */
 html header .menu-scroll-down .icon {
   display: none;
 }
-/* line 196, ../sass/_global.scss */
+/* line 206, ../sass/_global.scss */
 html footer.site-footer {
   background: url("/wp-content/themes/a2uned/assets/images/hexagon-footer.png") top right no-repeat;
   background-size: 20%;
@@ -199,22 +209,22 @@ html footer.site-footer {
   text-align: center;
   padding: 20px;
 }
-/* line 203, ../sass/_global.scss */
+/* line 213, ../sass/_global.scss */
 html footer.site-footer .logo-icon {
   width: 16px;
   margin: 0 5px -5px 0;
   display: inline-block;
 }
-/* line 210, ../sass/_global.scss */
+/* line 220, ../sass/_global.scss */
 html .site-content {
   padding: 40px 0;
 }
-/* line 214, ../sass/_global.scss */
+/* line 224, ../sass/_global.scss */
 html .page-header {
   height: inherit;
   padding-bottom: 15px;
 }
-/* line 219, ../sass/_global.scss */
+/* line 229, ../sass/_global.scss */
 html .page-title {
   font-size: 2.4rem;
   letter-spacing: normal;
@@ -222,7 +232,7 @@ html .page-title {
   padding: 0 0 15px;
   border-bottom: 1px solid #f5f6f7;
 }
-/* line 227, ../sass/_global.scss */
+/* line 237, ../sass/_global.scss */
 html .post-list-header {
   background: #527435;
   background: rgba(82, 116, 53, 0.3) url("/wp-content/themes/a2uned/assets/images/hero.jpg") center no-repeat;
@@ -230,7 +240,7 @@ html .post-list-header {
   margin: -40px 0 40px;
   padding: 0;
 }
-/* line 234, ../sass/_global.scss */
+/* line 244, ../sass/_global.scss */
 html .post-list-header .page-title {
   color: #ffffff;
   border: none;
@@ -241,39 +251,39 @@ html .post-list-header .page-title {
   font-size: 3.4rem;
   opacity: 0.8;
 }
-/* line 244, ../sass/_global.scss */
+/* line 254, ../sass/_global.scss */
 html .post-list-header .page-title span {
   font-weight: 300;
   color: rgba(210, 210, 210, 0.8);
 }
-/* line 251, ../sass/_global.scss */
+/* line 261, ../sass/_global.scss */
 html #secondary {
   font-size: 1.4rem;
 }
-/* line 255, ../sass/_global.scss */
+/* line 265, ../sass/_global.scss */
 html .nav-subtitle {
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 1px;
 }
-/* line 261, ../sass/_global.scss */
+/* line 271, ../sass/_global.scss */
 html .nav-title {
   font-size: 1.4rem;
   color: #527435;
 }
 
-/* line 268, ../sass/_global.scss */
+/* line 278, ../sass/_global.scss */
 .entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover {
   text-shadow: none;
   box-shadow: none;
 }
 
-/* line 273, ../sass/_global.scss */
+/* line 283, ../sass/_global.scss */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
   padding: 8px 10px;
 }
 
-/* line 279, ../sass/_global.scss */
+/* line 289, ../sass/_global.scss */
 body.admin-bar .site-navigation-fixed.navigation-top {
   top: 7px;
 }
@@ -295,7 +305,7 @@ body.page:not(.twentyseventeen-front-page) .entry-meta {
 /* line 11, ../sass/_entry.scss */
 body article .entry-header .entry-title,
 body.page:not(.twentyseventeen-front-page) .entry-header .entry-title {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: 900;
   letter-spacing: normal;
   text-transform: none;
@@ -390,26 +400,36 @@ body.page:not(.twentyseventeen-front-page) .entry-footer .tags-links a {
 }
 
 /* line 97, ../sass/_entry.scss */
+body.single .entry-header {
+  background: url("/wp-content/themes/a2uned/assets/images/border-horizontal.png") left bottom repeat-x;
+  margin-bottom: 30px;
+}
+/* line 102, ../sass/_entry.scss */
+body.single .entry-content {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+/* line 107, ../sass/_entry.scss */
 body.single .author-bio-section {
   background: #f5f6f7;
   padding: 15px;
 }
-/* line 102, ../sass/_entry.scss */
+/* line 112, ../sass/_entry.scss */
 body.single .author-name {
   font-size: 1.5rem;
 }
-/* line 106, ../sass/_entry.scss */
+/* line 116, ../sass/_entry.scss */
 body.single .author-details {
   font-size: 1.4rem;
 }
-/* line 109, ../sass/_entry.scss */
+/* line 119, ../sass/_entry.scss */
 body.single .author-details img {
   border: 1px solid #d2d2d2;
   border-radius: 50%;
   float: left;
   margin: 0 15px 10px 0;
 }
-/* line 117, ../sass/_entry.scss */
+/* line 127, ../sass/_entry.scss */
 body.single .author-links {
   margin: 0;
   font-size: 1.4rem;
@@ -420,19 +440,24 @@ body.single .author-links {
   padding-top: 40px;
 }
 
-/* line 7, ../sass/_comments.scss */
+/* line 5, ../sass/_comments.scss */
+.comment-list {
+  margin-left: 60px;
+}
+
+/* line 11, ../sass/_comments.scss */
 .comments-area .comments-title {
   font-size: 1.8rem;
 }
-/* line 11, ../sass/_comments.scss */
+/* line 15, ../sass/_comments.scss */
 .comments-area .comment-body {
   font-size: 1.4rem;
 }
-/* line 15, ../sass/_comments.scss */
+/* line 19, ../sass/_comments.scss */
 .comments-area .comment-author {
   font-size: 1.4rem;
 }
-/* line 19, ../sass/_comments.scss */
+/* line 23, ../sass/_comments.scss */
 .comments-area .comment-metadata {
   font-size: 1.2rem;
   font-weight: 300;
@@ -498,19 +523,24 @@ body.single .author-links {
   font-size: 1.8rem;
   margin: 0;
   padding: 0 0 30px 0;
+  opacity: 0.8;
 }
-/* line 9, ../sass/_walletAddresses.scss */
+/* line 10, ../sass/_walletAddresses.scss */
 #payments-donations h4 i {
   color: #d2d2d2;
   transform: rotate(0.1turn);
 }
-/* line 19, ../sass/_walletAddresses.scss */
+/* line 20, ../sass/_walletAddresses.scss */
+#payments-donations .crypto-addresses li.referral-action {
+  margin-top: 30px;
+}
+/* line 24, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .crypto-asset img {
   display: inline-block;
   color: #3f4041;
   width: 20px;
 }
-/* line 25, ../sass/_walletAddresses.scss */
+/* line 30, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li h5 {
   font-size: 1.6rem;
   text-transform: none;
@@ -520,22 +550,22 @@ body.single .author-links {
   padding: 0 0 0 8px;
   position: relative;
   top: -4px;
-  font-weight: 900;
+  font-weight: 400;
   color: #000;
 }
-/* line 38, ../sass/_walletAddresses.scss */
+/* line 43, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .input-action {
   margin: 5px 0 20px 0;
   position: relative;
 }
-/* line 42, ../sass/_walletAddresses.scss */
+/* line 47, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .input-action button {
   position: absolute;
   right: 1px;
   top: 1px;
   padding: 8px 16px;
 }
-/* line 49, ../sass/_walletAddresses.scss */
+/* line 54, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .input-action .success-message {
   background: #527435;
   color: #ffffff;
@@ -548,11 +578,11 @@ body.single .author-links {
   border-radius: 3px;
   display: none;
 }
-/* line 61, ../sass/_walletAddresses.scss */
+/* line 66, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .input-action .success-message i {
   padding: 0 6px 0 0;
 }
-/* line 65, ../sass/_walletAddresses.scss */
+/* line 70, ../sass/_walletAddresses.scss */
 #payments-donations .crypto-addresses li .input-action .success-message.visible {
   display: block;
 }
@@ -609,12 +639,17 @@ body.single .author-links {
   }
 
   /* line 64, ../sass/_mediaQueries.scss */
+  .comment-list {
+    margin-left: 0;
+  }
+
+  /* line 68, ../sass/_mediaQueries.scss */
   footer.site-footer {
     font-size: 1.2rem;
     background-size: 40%;
   }
 
-  /* line 69, ../sass/_mediaQueries.scss */
+  /* line 73, ../sass/_mediaQueries.scss */
   #payments-donations .crypto-addresses li .input-action button {
     padding: 13px 16px;
   }

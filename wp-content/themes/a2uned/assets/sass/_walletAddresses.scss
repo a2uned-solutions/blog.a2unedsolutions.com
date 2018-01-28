@@ -5,6 +5,7 @@
     font-size: 1.8rem;
     margin: 0;
     padding: 0 0 30px 0;
+    opacity: 0.8;
 
     i {
       color: $cSecondaryText;
@@ -15,6 +16,10 @@
   .crypto-addresses {
 
     li {
+
+      &.referral-action {
+        margin-top: 30px;
+      }
 
       .crypto-asset img {
         display: inline-block;
@@ -31,7 +36,7 @@
         padding: 0 0 0 8px;
         position: relative;
         top: -4px;
-        font-weight: 900;
+        font-weight: 400;
         color: #000;
       }
 

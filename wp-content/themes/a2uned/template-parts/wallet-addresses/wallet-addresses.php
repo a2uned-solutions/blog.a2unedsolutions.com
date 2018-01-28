@@ -3,7 +3,7 @@
     <ul class="no-list crypto-addresses">
         <li>
             <div class="crypto-asset">
-                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/black/doge.svg" alt="Dogecoin" />
+                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/color/doge.svg" alt="Dogecoin" />
                 <h5>Dogecoin</h5>
             </div>
             <div class="input-action">
@@ -16,7 +16,7 @@
         </li>
         <li>
             <div class="crypto-asset">
-                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/black/btc.svg" alt="Bitcoin" />
+                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/color/btc.svg" alt="Bitcoin" />
                 <h5>Bitcoin</h5>
             </div>
             <div class="input-action">
@@ -29,7 +29,7 @@
         </li>
         <li>
             <div class="crypto-asset">
-                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/black/ltc.svg" alt="Litecoin" />
+                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/color/ltc.svg" alt="Litecoin" />
                 <h5>Litecoin</h5>
             </div>
             <div class="input-action">
@@ -42,7 +42,7 @@
         </li>
         <li>
             <div class="crypto-asset">
-                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/black/eth.svg" alt="Ethereum" />
+                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/color/eth.svg" alt="Ethereum" />
                 <h5>Ethereum</h5>
             </div>
             <div class="input-action">
@@ -55,7 +55,7 @@
         </li>
         <li>
             <div class="crypto-asset">
-                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/black/bts.svg" alt="BitShares" />
+                <img src="/wp-content/themes/a2uned/assets/images/crypto-icons/color/bts.svg" alt="BitShares" />
                 <h5>BitShares Username</h5>
             </div>
             <div class="input-action">

@@ -9,7 +9,7 @@ body.page:not(.twentyseventeen-front-page) {
   }
 
   .entry-header .entry-title {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-weight: 900;
     letter-spacing: normal;
     text-transform: none;
@@ -93,6 +93,16 @@ body.page:not(.twentyseventeen-front-page) {
 }
 
 body.single {
+
+  .entry-header {
+    background: url("/wp-content/themes/a2uned/assets/images/border-horizontal.png") left bottom repeat-x;
+    margin-bottom: 30px;
+  }
+
+  .entry-content {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
 
   .author-bio-section{
     background: $cSecondary;
