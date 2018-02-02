@@ -15,7 +15,6 @@ Text Domain: a2uned
 
 body article .entry-content a {
 	font-weight: 400;
-	text-decoration: underline;
 }
 
 body article .entry-content ol li,
