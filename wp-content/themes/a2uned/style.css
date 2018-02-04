@@ -21,3 +21,9 @@ body article .entry-content ol li,
 body article .entry-content ul li {
 	margin: 0 0 10px 0;
 }
+code, kbd, tt, var {
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+}
