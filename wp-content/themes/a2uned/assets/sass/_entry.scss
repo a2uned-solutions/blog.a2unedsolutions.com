@@ -43,14 +43,24 @@ body.page:not(.twentyseventeen-front-page) {
     ul {
       margin: 0 0 20px 15px;
       padding: 0 0 0 15px;
+
+      li {
+        margin: 0 0 10px 0;
+      }
     }
 
     ol {
       margin: 0 0 20px 15px;
       padding: 0 0 0 15px;
+
+      li {
+        margin: 0 0 10px 0;
+      }
     }
+
     a {
       box-shadow: none;
+      font-weight: 600;
     }
 
     a.more-link {
@@ -62,7 +72,7 @@ body.page:not(.twentyseventeen-front-page) {
       padding: 8px 12px;
       display: inline-block;
       border-radius: 3px;
-      font-weight: 400;
+      font-weight: 600;
       transition: background-color 0.5s;
 
       &:before {

@@ -60,6 +60,13 @@ html {
     line-height: 1.4;
   }
 
+  code, kbd, tt, var {
+    background: #666;
+    color: #fff;
+    padding: 8px;
+    font-size: 1.3rem;
+  }
+
   input,
   button,
   select,
@@ -106,7 +113,7 @@ html {
   }
 
   .wrap {
-    max-width: 1300px;
+    max-width: 1400px;
     padding-left: 30px;
     padding-right: 30px;
   }
